@@ -362,6 +362,13 @@ nav .fa-solid{
     #header{
         background-image: url(images/phone-background.png);
     }
+	#text1, #text2 {
+        position: realtive;
+        width: 10%;
+        display: inline-block;
+        font-size: 30pt;
+        user-select: none;
+    }
     .header-text{
         margin-top: 125%;
         font-size: 16px;
