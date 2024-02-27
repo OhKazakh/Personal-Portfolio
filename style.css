@@ -369,6 +369,10 @@ nav .fa-solid{
         font-size: 30pt;
         user-select: none;
     }
+	#contain{
+	width: 50vw;
+	height: 100pt;
+}
     .header-text{
         margin-top: 125%;
         font-size: 16px;
