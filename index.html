@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://kit.fontawesome.com/8fd88ab3c9.js" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <!--ICON-->
+        <link rel="icon" href="/images/icon.png">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Website</title>
+        <meta property="og:title" content="Danial B. Digital Portfolio">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="/images/icon.png">
+        <meta property="og:url" content="https://personalwebsite2288.web.app">
+        <meta property="og:description" content="Personal Digital Portfolio of Baluanov Danial.">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:site_name" content="Danial B. Digital Portfolio">
+        <!--css-file-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <link href="https://fonts.googleapis.com/css?family=Concert One" rel="stylesheet">
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/Logo.png" alt="logo" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#hobbies">Hobbies</a></li>
+                        <li><a href="#wark">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div id="contain">
+                    <span id="text1"></span>
+                    <span id="text2"></span>
+                </div>
+                <svg id="filters">
+                    <defs>
+                        <filter id="threshold">
+                            <feColorMatrix in="SourceGraphic"
+                                    type="matrix"
+                                    values="1 0 0 0 0
+                                                    0 1 0 0 0
+                                                    0 0 1 0 0
+                                                    0 0 0 255 -140" />
+                        </filter>
+                    </defs>
+                </svg>
+                <div class="header-text">
+                    <h1>Hello, I'm 
+                        <main class="text-container">
+                            <svg class="text-stroke" viewBox="0 0 800 100" width="80%" height="100%">
+                                <text class="text" x="20" y="75">Baluanov  Danial</text>
+                            </svg>
+                        </main>
+                    from Kazakhstan</h1>
+                </div>
+            </div>
+        </div>
+        <!-----About----->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <!--INFO-TEXT-->
+                        <p>
+                            At 15, I code with Astana's youthful energy and my C1 English fluency. Yet, code's my true compass, guiding me towards top universities, where ambition and collaboration thrive.
+                            <br>My full name is Baluanov Danial, and my surrounding people often call me confident, determined, meticulous, ambitious, hard-working, and pragmatic. In my future, I plan to study computer science, due to my passion for it, and work as a Front-End Developer.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                            <p class="tab-links" onclick="opentab('certificates', event)">Certificates</p>
+                            <p class="tab-links" onclick="opentab('academic', event)">Academic</p>
+                            <p class="tab-links" onclick="opentab('plans', event)">Plans</p>
+                        </div>
+                        <!--Skills-->
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>English</span><br>Certainly, I know and am learning English, and my proficiency in it is C1.</li>
+                                <li><span>Web Development</span><br>As you probably already saw, I develop websites all by myself. My greatest work stands just before your eyes.</li>
+                                <li><span>Communicability</span><br>It is really easy for me to get along with almost anyone, because I am a really tactful individual.</li>
+                                <li><span>Studying</span><br>I absorb new information like a sponge, because I am a quick-learner.</li>
+                            </ul>
+                        </div>
+                        <!--Certificates-->
+                        <div class="tab-contents" id="certificates">
+                            <ul>
+                                <li><span>Coursera, Meta Front-End Developer</span><br>In progress. Completed 3/9. Received Financial aid for each one.</li>
+                                <li><span>Coursera, Yale University Connected Leadership</span><br>In Progress. Received Financial aid.</li>
+                                <li><span>New ones coming soon</span><br>To be Announced.</li>
+                            </ul>
+                        </div>
+                        <!--Academic Achievements-->
+                        <div class="tab-contents" id="academic">
+                            <ul>
+                                <li><span>Olimpiads</span><br>Numerous Diplomas of Merit.</li>
+                                <li><span>GPA</span><br>My current GPA is approximately 86%.</li>
+                                <li><span>Comprehension</span><br>The Subjects I Require I Understand with Ease and Speed.</li>
+                            </ul>
+                        </div>
+                        <!--Plans-->
+                        <div class="tab-contents" id="plans">
+                            <ul>
+                                <li><span>Education</span><br>My Goal is to Study in the US or Canada.</li>
+                                <li><span>English</span><br>In Addition, Ace my IELTS/SAT Scores.</li>
+                                <li><span>Life</span><br>As Well as Educating Abroad, I Want to Live and Work There.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Hobbies-->
+        <div id="hobbies">
+            <div class="container">
+                <h1 class="sub-title">My Hobbies</h1>
+                <div class="hobbies-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Programming</h2>
+                        <p>I Love Learning Something New!<br><br>And in my free time I usually either studying something new to enhance my coding skills or practice my obtained skills.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-book"></i>
+                        <h2>Chess</h2>
+                        <p>Chess helps me to Concentrate and Think about moves and possible variations in advance.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-headset"></i>
+                        <h2>Gaming</h2>
+                        <p>Personally, I play video games to relax and spend some time with wonderful friends of mine.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Work-->
+        <div id="wark">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Personal Website</h3>
+                            <p>You are Looking at It Right Now!</p>
+                            <a href="https://personalwebsite2288.web.app"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Calculator</h3>
+                            <p>You Can See it by Clicking the Link Below!</p>
+                            <a href="https://calculator2288.web.app"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>List of Universities <br>and Their Requirements.</h3>
+                            <p>You Can See it by Clicking the Link Below!</p>
+                            <a href="https://ohkazakh.github.io/uni-list/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Contact-->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> danbaluanov@bk.ru</p>
+                        <p><i class="fa-solid fa-phone"></i> +77072883881</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/ohkazakh/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://twitter.com/OhKazakh"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://t.co/SpjChx7kIk"><i class="fa-brands fa-paypal"></i></a>
+                            <a href="https://wa.me/77072883881"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright <i class="fa-regular fa-copyright"></i> Danial. Made by Baluanov Danial</p>
+            </div>
+        </div>
+        <script defer src="app.js"></script>
+    </body>
+</html>
