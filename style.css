@@ -228,6 +228,9 @@ nav ul li a:hover::after{
     position: relative;
     overflow: hidden;
 }
+.sub-title p{
+	font-size: 7px;
+}
 .work img{
     width: 100%;
     border-radius: 10px;
