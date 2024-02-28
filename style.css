@@ -127,6 +127,7 @@ nav ul li a:hover::after{
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
+	oncontextmenu="return false"
 }
 .about-col-2{
     flex-basis: 60%;
@@ -232,6 +233,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+	oncontextmenu="return false"
 }
 .layer{
     width: 100%;
