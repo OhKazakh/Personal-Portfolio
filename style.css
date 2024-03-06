@@ -198,6 +198,9 @@ nav ul li a:hover::after{
     position: relative;
     overflow: hidden;
 }
+.sub-title p{
+	font-size: 7px;
+}
 .work img{
     width: 100%;
     border-radius: 10px;
@@ -333,12 +336,16 @@ nav .fa-solid{
     #header{
         background-image: url(images/phone-background.png);
     }
-    #text1, #text2 {
+	#text1, #text2 {
         position: realtive;
         width: 10%;
         display: inline-block;
         font-size: 30pt;
         user-select: none;
+    }
+	#contain{
+	width: 80%;
+	height: 100pt;
     }
     .header-text{
         margin-top: 40%;
@@ -397,9 +404,4 @@ nav .fa-solid{
     #contain{
         margin-top: 50%;
     }
-}
-#msg{
-    color: #61b752;
-    margin-top: -10px;
-    display: block;
 }
