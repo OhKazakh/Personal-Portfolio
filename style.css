@@ -37,8 +37,6 @@ body{
 	display: inline-block;
 	font-size: 50pt;
 	user-select: none;
-    background-color: rgba(204, 0, 0, 0.5);
-    border-radius: 10px;
 }
 nav{
     display: flex;
