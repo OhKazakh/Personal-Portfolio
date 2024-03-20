@@ -48,6 +48,8 @@ body{
 }
 nav{
     display: flex;
+    position: fixed;
+    z-index: 1000;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
