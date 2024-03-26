@@ -197,7 +197,7 @@ nav ul li a:hover::after{
     background: #ababab;
     transform: translateY(-10px);
 }
-/*work*/
+/**work**/
 #wark{
     padding: 50px 0;
 }
