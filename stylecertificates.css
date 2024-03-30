@@ -194,10 +194,12 @@ header p{
 
 .slide.prev{
     left: 0px;
+    color: #000;
 }
 
 .slide.next{
     right: 0px;
+    color: #000;
 }
 
 .image-box img{
