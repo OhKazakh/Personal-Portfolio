@@ -29,15 +29,17 @@ body{
     background: #fff;
 }
 
+.logo{
+    width: 140px;
+}
+
 nav{
     display: flex;
-    position: absolute;
+    position: fixed;
+    z-index: 100;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-.logo{
-    width: 140px;
 }
 nav ul li{
     display: inline-block;
@@ -273,7 +275,7 @@ header p{
         transition: right 0.5s;
     }
     nav ul li{
-        display: block;
+        display: flex;
         margin: 25px;
     }
     nav ul .fa-solid{

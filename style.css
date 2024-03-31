@@ -46,6 +46,9 @@ body{
 	font-size: 50pt;
 	user-select: none;
 }
+.logo{
+    width: 140px;
+}
 nav{
     display: flex;
     position: fixed;
@@ -53,9 +56,6 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-.logo{
-    width: 140px;
 }
 nav ul li{
     display: inline-block;
@@ -314,7 +314,7 @@ nav .fa-solid{
         border-radius: 10px;
         width: auto;
         display: inline-block;
-        font-size: 30pt;
+        font-size: 38px;
         user-select: none;
     }
     .header-text{
