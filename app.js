@@ -24,7 +24,6 @@ const elts = {
 const texts = [
 	"Future Software Engineer",
 	"Future Top University Student",
-	"Future Canadian International School Student",
 ];
 const morphTime = 1;
 const cooldownTime = 1.25;
