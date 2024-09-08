@@ -1,5 +1,8 @@
 var tablinks = document.getElementsByClassName("tab-links");
+
 var tabcontents = document.getElementsByClassName("tab-contents");
+
+
 function opentab(tabname, event) {
     for (tablink of tablinks) {
         tablink.classList.remove("active-link");
@@ -10,21 +13,33 @@ function opentab(tabname, event) {
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
+
+
 var sidemenu = document.getElementById("sidemenu");
+
+
 function openmenu(){
     sidemenu.style.right = "0";
 }
+
+
 function closemenu(){
     sidemenu.style.right = "-200px";
 }
+
+
 const elts = {
 	text1: document.getElementById("text1"),
 	text2: document.getElementById("text2")
 };
+
+
 const texts = [
 	"Future Software Engineer",
 	"Future Top University Student",
 ];
+
+
 const morphTime = 1;
 const cooldownTime = 1.25;
 let textIndex = texts.length - 1;
@@ -43,6 +58,8 @@ function doMorph() {
 	}
 	setMorph(fraction);
 }
+
+
 function setMorph(fraction) {
 	elts.text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
 	elts.text2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
@@ -52,6 +69,8 @@ function setMorph(fraction) {
 	elts.text1.textContent = texts[textIndex % texts.length];
 	elts.text2.textContent = texts[(textIndex + 1) % texts.length];
 }
+
+
 function doCooldown() {
 	morph = 0;
 	elts.text2.style.filter = "";
@@ -59,6 +78,8 @@ function doCooldown() {
 	elts.text1.style.filter = "";
 	elts.text1.style.opacity = "0%";
 }
+
+
 function animate() {
 	requestAnimationFrame(animate);
 	let newTime = new Date();
@@ -75,6 +96,8 @@ function animate() {
 		doCooldown();
 	}
 }
+
+
 animate();
 var loader = document.getElementById("preloader");
 window.addEventListener("load", function(){
